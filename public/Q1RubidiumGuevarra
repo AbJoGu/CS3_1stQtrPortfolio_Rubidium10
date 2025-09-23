@@ -2,12 +2,30 @@
   <title> Joram's End of Lessons Reflections </title>
   <head>
     <style>
-      background-image: url('path/to/your/image.jpg');
+      .white-text {
+            color: white;
+        }
+      background-image: url('Earth-Around-Us-First-Photograph-NASA-Apollo8-Dec24-Earthrise.jpg');
     </style>
   </head>
   <body>
     <center>
         <h2> Reflections for the End of Quarter 1 </h2> <br>
+        <ol>
+          <li> Repeating statements/loops: The concepts and just the coding part of loops is simple and easy to understand.
+               Syntax was similar to C++ which we learned in Grade 8 </li>
+          <li> Arithmetic Operators: One of the simplest concepts for me. Just some + and - symbols. <li>
+          <li> User interface: Generally easy syntax to memorize. Process behind it makes sense <li>
+          <li> GitHub Management: GitHub has a very clear UI. Everything is labeled and their uses are immediately apparent </li>
+          <li> JavaScript Coding and Syntax: JavaScript is very understandbale. Copies human language, being a high-level programming language </li>
+        </ol>
+
+        <ol>
+            <li> VSCode Management: VSCode management requires some knowledge of .bash. The reqirement of Live Server and other foreign applications </li>
+            <li> HTML Coding: HTML seems like a low-level programming language. Syntax is foreign and had=rd to understand. </li>
+
+        </ol>
+
     </center>
   </body>
 </html>
