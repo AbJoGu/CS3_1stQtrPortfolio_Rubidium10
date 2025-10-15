@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TableGroupActivity</title>
+        <link rel="stylesheet" href="styles.css">
+    <style>
+                    table {
+            width: 40%;
+            border-collapse: collapse; /* removes double borders */
+            margin: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            }
+
+            th, td {
+            border: 2px solid #d4ae05;
+            padding: 12px;
+            text-align: center;
+            }
+
+            th {
+            background-color: #2354be; /* green header */
+            color: rgb(105, 198, 226);
+            }
+
+            tr:nth-child(even) {
+            background-color: #539bd6; /* zebra stripes */
+            }
+
+            tr:hover {
+            background-color: #ffeaa7; /* highlight on hover */
+            transition: 0.5s;
+            }
+
+            img {
+                position:absolute;
+                top: 70px;
+                left: 1175px;
+            }
+
+            div {
+                position:absolute;
+                top: 40px;
+                left: 600px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size:smaller;
+            }
+            
+        </style>
+    </head>
+    <body bgcolor="#B8B3EA">
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td>7:10 am - 7:30 am </td>
+                <td>Flag Ceremony</td>
+            </tr>
+            <tr>
+                <td>7:30 am - 8:15 am </td>
+                <td>Biology</td>
+            </tr>
+            <tr>
+                <td>8:15 am - 9:10 AM</td>
+                <td>Study Period</td>
+            </tr>
+            <tr>
+                <td>9:10 am - 9:55 am </td>
+                <td>Statistics</td>
+            </tr>
+            <tr>
+                <td> 9:55 am - 10:40 am</td>
+                <td> Statistics </td>
+            </tr>
+            <tr>
+                <td>10:40 am - 11:25 am</td>
+                <td>Filipino</td>
+            </tr>
+            <tr>
+                <td> 11:25 am - 12:10 pm</td>
+                <td> Filipino</td>
+            </tr>
+            <tr>
+                <td> 12:10 pm - 1:05 pm</td>
+                <td> Lunch</td>
+            </tr>
+            <tr>
+                <td> 1:05 pm - 1:50 pm</td>
+                <td> Values Education</td>
+            </tr>
+            <tr>
+                <td> 1:50 pm - 2:35 pm</td>
+                <td> Music</td>
+            </tr>
+            <tr>
+                <td> 2:45 pm - 3:30 pm</td>
+                <td>Chemistry</td>
+            </tr>
+            <tr>
+                <td>3:30 pm - 4:15 pm</td>
+                <td> Chemistry</td>
+            </tr>
+        </table>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAABDlBMVEUAAAD///8ArOzOESYApuQAn9rp6ekAFBzt+v0Lr+3m9v35/v8sLCwAquwmsu0AqOvMACfLAAA4ODjNABzMABVBQUH77e/++frMABDtvL/xqxru8fKut7q25Pg8TFJIXGMcNT/V2do/uu8XLDKXmJk8RUjQIzPH6fmp3/fyzM97zPP119n0sxn91BXsmhzYTCPRJiXVOSTfcSHcYyK+w8Wb1fVwen4ePkgFHiUdHR1/g4SjpaYvSFFaY2gTGx5rcXIqOD17jJJhxPHF0thPV1rssLXWR1PTNkPbbXToo6jhe4TZXmTih47ml536xxbmhh3/4BTNwMJuAACjDB27DiGFAADBq7AAKDaQoqhWcXthQTczAAAGsUlEQVRogZXZ6VbbOBQAYMkGshjbcp0mIQGKswCB7Bu0kJKFsgQI7bQzhfd/kZHsLLJ0FZx7Tn80cb/eXMlaERYiPyn1Ly5jX3fL3668vPitGEby9KxgWZeX133gaRR+tjuIIS6+33TX0SdnCds2NW0r+EexQddQ4sZVEUnxaV9FHxQYzGJrmVFxn+c5fDKUaRZlD8y6YGuL2OJ+7nAC4SOYZlGS7d4iaxFHaCTh+UO1jdCt0FbGeJW2hKMv+TCeB6rNx+eQHi+EbBFHR3ke/8im7co1lFEwtbX4Qg/wtTUJYrDCwzWBcPRlhfc/trlW7Yk2gAetyvBuFBshL7CTpmhDOJoEuPFhwYP4HOBiwRX40PDxt2g2Qv67eiIVBcbRG8ON71Hxsp+4bMN40aD4flQboS6cOIzTH4rwbXScdsexXHEV/o7RTnQbIQMDtAqP5VHEfhiEB1ZFgaMJKm2Cl3pQVVT4G/qyCf7tbBO8jyK+QUHcjjeoObrYhKavnbVJ5pcoBscuGGU600MB4zG0BUdSntn8oRyOTyD+FSXAKmoyvvcjA/+HNGB8F1lR8bRzXNkMP0Tg+wzh+M519jbC+wh+LSD8XteP0/QXANWB8SsEv9AAfp7SdZY6VHoY91AcrnlcAh4onn3EeBq1LHTgggfRhISfOzrFXzB++hERH9Dx/BSqi4xPaeJ66hnjR0fuNCDeZdMc1BlDOEs14+os7ulPyLrpKPh3Ns0B65AwXnHOGenjNOu07tDK45eP8KtgaQGkzuMvzn0Gp12ddJq0M2bSbpb+lMrdB3g5WFrgAzn1EJ5NPWBMdFLvED37HOB3x3yP/AxVfL6cO5N0HqcdPPuUeXBJfUZoh5m6qSnrO+m1+AgvcGnZGm7QR0dPHVM891qlOmvZzDTlnq/DD40ljuPiJBDuitMsM0m1Wc8R1qyp6bGerazBh/wSGicT5ho8c89IUm3pM1r2IPvQICbgxdDiX9osCC9RxQlw0qjRdm35nVKNHwrbFiy06gJftBpLneQa9E+9WauTtXh/uQnhtoonli3j06DHPbmEUJzorVq9WmvO8fOMjBfBrSLtNL2ELZZlmnqa0n7h6p2OXqc4ydWauVfi48+PUubKTS7j6a7YNk0Orzhuytk7d0j754y2ZktvVEmH9Uin8ngsluV2zfbcj+RBb2xtWQs8c0xL4N7peitH2g3SaZMGabKXKfXCVb18ObwpdT84WGCaV7opFy93Fn9/CIZD1stJk3RmhHT0GWEdZpV4PJEojHsH0jAt4N3Fan2J77Fe2Gy1Wrk2ab82frbpCFOr0w7jPnC4ppmmbRZO15Rlv7xs9CWe8fOezXKzHCG1XI31lZ/sTc2uZqT4fPFj2omeokG9Fc3h+AdNnTT9otCuUqvlSLNBaJM6aQmnYVsnEB5eqK9w/ERHFtKq6qRRnzG83SSNHMlyE3WcX7bZZzI+QCo888Ry78xo7q/1KrNbs5Z7n1bgml2Ih3HpRITDMX522Dw0q7c7nU6j0XmttrK8LeCamUiGcGlLF8Jx5d5xid5oB9FwnWlojhZwzZy/JgF+I9oCTnvkHauNH447PQ9/KeKaWVhNFleSLeEY//rn9x9d//P73/+k9ZyEz1uV4Z5sA/jiEOxd/kbGNftgjkN7aADPB4cEwEEmgGtWsLQAt7kAHhxvjIAvINw+9fFyVNw/34BOYCFcS7DlHFRxGGep96HPQZymjvC36Hg+OF2KhptjisO7AhDH1zHwYxCnsxmCq6LARwPwYxi3T5DioAjGu28b4GZPdSQC4xP4OF2Bj5E8rKzBk94GuFZAipNWGDfkTd4a3EJDGPeSYHg7UHjbcKAjGN8Gc9H+wk+r4nojXJEKHDFVg8K4FeEsfBVHqq4I4uYYHisUcaN6iWD8DJiz1FFSnYiCuH2qGCzgmCBjdwM8iTew2akFfKcA4lbEG4gg2KnFJDJu9+DJXBH7ymkOzJwtRiJ3Rv9wHp6gAZwlHvn2xL+EQIpkADwRLL0jHubPL0Qw1Btl3F/m4MhVn1/lgPctEm6PFwNspNuZEV7gQAcTcdNa7UcUwxEf3PUZNqQjegE3+YNG+WkxQhd/OC426raQd+gQ0xiA5DIuhFML8fkQblvCAamxtjID+dQi3E48bp+Ft5cs1lxdjZYP8VtFvjTbXNoHEk1jR1GaQ2/1THiTOxRx07Z6ctpBdIHXaRi6yBe35/3YEqcbbm18qqL93zoa8nKxLyxTpYOFvPc2uv4b27YK494JvEzhwvD2S++Hw6OL99K+J+XxP/mltFK9f4M5AAAAAElFTkSuQmCC" class="rounded-image" align width="150" height="150" margin="50px">
+        <div border="2px solid black" padding="10px" width="300px" height="150px" margin="50px" >
+            <h2> Vision </h2> 
+            <h5>We are the leading science high school in the Asia Pacific Region preparing our scholars to become </h5> 
+            <h5>globally competitive Filipino scientists equipped with 21st century skills and imbued with the </h5>
+            <h5> core values of Integrity, Excellence and Service to the Nation.</h5>
+        </div>
+
+        <footer>
+            <h4>Other links:</h4>
+            <p><a href=" " > Tuesday </a></p>
+            <p><a href = " " > Thursday </a></p>
+            <p><a href = " " > Friday </a></p>
+            <p style="font-size: 0.8em; margin-top: 20px;"> &copy; 2025 Abisha Joram L. Guevarra. All rights reserved. </p>
+        </footer>
+    </body>
+</html>
